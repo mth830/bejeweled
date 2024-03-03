@@ -179,16 +179,7 @@ class Bejeweled {
     }
     Screen.render();
   }
-  /*
-  0 0 0 0 z
-  1 1 1 y y
-  2 2 x x x
-  3 z z z 0
-  4 y y 1 1
-  5 x 2 2 2
-  6 6 6 6 6
-  7 7 7 7 7
-  8 8 8 8 8*/
+
   fillVertical(row, col, length) {
     this.score += 10 * length;
     for (let r = row; r > row - length && r >= 0; r--) {
@@ -204,13 +195,6 @@ class Bejeweled {
   mark() {
     this.cursor.markMode = true;
   }
-
-  // static checkForMatches(grid) {
-
-  //   // Fill this in
-
-  // }
-
 }
 
 module.exports = Bejeweled;
